@@ -1,0 +1,17 @@
+PODS:
+  - EVReflection/Core (4.5.1)
+  - EVReflection/XML (4.5.1):
+    - EVReflection/Core
+    - XMLDictionary
+  - XMLDictionary (1.4.1)
+
+DEPENDENCIES:
+  - EVReflection/XML
+
+SPEC CHECKSUMS:
+  EVReflection: 4bdb12ccd49fae59500f5f7415eb3014df601284
+  XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
+
+PODFILE CHECKSUM: 55bf0b37c9ac27d68839d309ccea910988df62c4
+
+COCOAPODS: 1.1.1
