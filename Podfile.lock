@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.4.0)
   - EVReflection/Core (4.5.1)
   - EVReflection/XML (4.5.1):
     - EVReflection/Core
@@ -6,12 +7,14 @@ PODS:
   - XMLDictionary (1.4.1)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.4)
   - EVReflection/XML
 
 SPEC CHECKSUMS:
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   EVReflection: 4bdb12ccd49fae59500f5f7415eb3014df601284
   XMLDictionary: fa07b6ff422b3a91d47a5de9bc82e3fc04fbd167
 
-PODFILE CHECKSUM: 55bf0b37c9ac27d68839d309ccea910988df62c4
+PODFILE CHECKSUM: 6f972a00c9e70a1be42ed3abd250af1c70dce82f
 
 COCOAPODS: 1.1.1

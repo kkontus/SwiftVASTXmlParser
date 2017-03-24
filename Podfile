@@ -7,6 +7,7 @@ target 'SwiftVASTXmlParser' do
 
   # Pods for SwiftVASTXmlParser
   pod 'EVReflection/XML'
-  # pod 'EVReflection', :git => 'https://github.com/evermeer/EVReflection.git', :branch => 'Swift3'
+  pod 'Alamofire', '~> 4.4’
+  # pod 'AlamofireImage', '~> 3.1'
 
 end

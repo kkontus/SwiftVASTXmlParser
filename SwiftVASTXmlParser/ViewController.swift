@@ -8,15 +8,27 @@
 
 import UIKit
 
-class ViewController: UIViewController, XMLParserDelegate {
+class ViewController: UIViewController, XMLParserDelegate, ResponseObserver {
     var xmlParser: XMLParser!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        
-        let xml = loadXmlFromFile()
+        // loadXmlFromNet()
+        loadXmlLocally()
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    private func loadXmlLocally() {
+        //let fileName = "vast_full"
+        let fileName = "vast"
+        let fileType = "xml"
+        let xml = loadXmlFromFile(fileName: fileName, fileType: fileType)
         // let xml = loadXmlFromCode()
         print("Loaded XML file:")
         // print(xml)
@@ -25,12 +37,7 @@ class ViewController: UIViewController, XMLParserDelegate {
         print("\(vastModel)")
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    func loadXmlFromCode() -> String {
+    private func loadXmlFromCode() -> String {
         let xml = "<VAST version=\"3.0\">\n" +
             "  <Ad id=\"1413833\">\n" +
             "    <InLine>\n" +
@@ -60,9 +67,7 @@ class ViewController: UIViewController, XMLParserDelegate {
         return xml
     }
     
-    func loadXmlFromFile() -> String {
-        let fileName = "vast"
-        let fileType = "xml"
+    private func loadXmlFromFile(fileName: String, fileType: String) -> String {
         let path = Bundle.main.path(forResource: fileName, ofType: fileType)
         
         var xml: String = ""
@@ -75,27 +80,28 @@ class ViewController: UIViewController, XMLParserDelegate {
         return xml
     }
     
+    private func loadXmlFromNet() {
+        var params: [String : String] = [:]
+        params["idzone"] = "2164533"
+        params["coun"] = "USA"
+        
+        ExadsSDK.getVAST(self, params: params)
+    }
+    
+    func onSuccess(_ xmlData: Data) {
+        let vastModel = VAST(xmlData: xmlData)
+        print("\(vastModel)")
+    }
+    
+    func onSuccess(_ statusCode: Int, calledBy: String) {
+        print("\(calledBy)")
+        print("\(statusCode)")
+    }
+    
+    func onError(_ error: Error, calledBy: String) {
+        print("\(calledBy)")
+        print("\(error)")
+    }
+    
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

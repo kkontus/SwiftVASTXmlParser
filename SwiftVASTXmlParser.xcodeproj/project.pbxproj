@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FB2F34E1E85815D0074468F /* vast_full.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6FB2F34D1E85815D0074468F /* vast_full.xml */; };
 		6FCE29CA1E7FE37B0031F288 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCE29C91E7FE37B0031F288 /* AppDelegate.swift */; };
 		6FCE29CC1E7FE37B0031F288 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCE29CB1E7FE37B0031F288 /* ViewController.swift */; };
 		6FCE29CF1E7FE37B0031F288 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FCE29CD1E7FE37B0031F288 /* Main.storyboard */; };
@@ -24,11 +25,19 @@
 		6FCE29F21E8000AF0031F288 /* TrackingEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCE29F11E8000AF0031F288 /* TrackingEvents.swift */; };
 		6FCE29F41E8000C40031F288 /* VideoClicks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCE29F31E8000C40031F288 /* VideoClicks.swift */; };
 		6FCE29F91E802E910031F288 /* vast.xml in Resources */ = {isa = PBXBuildFile; fileRef = 6FCE29F81E802E910031F288 /* vast.xml */; };
+		6FE989251E852D1B00483737 /* NetworkConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE989241E852D1B00483737 /* NetworkConnection.swift */; };
+		6FE989271E852E4E00483737 /* ExadsSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE989261E852E4E00483737 /* ExadsSDK.swift */; };
+		6FE989291E852E8800483737 /* ResponseObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE989281E852E8800483737 /* ResponseObserver.swift */; };
+		6FE9892B1E852F9400483737 /* ActionGetVAST.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9892A1E852F9400483737 /* ActionGetVAST.swift */; };
+		6FE9892E1E856A7D00483737 /* godaddy.der in Resources */ = {isa = PBXBuildFile; fileRef = 6FE9892D1E856A7D00483737 /* godaddy.der */; };
+		6FE989301E8578F100483737 /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE9892F1E8578F100483737 /* URLHelper.swift */; };
+		6FE989321E8578FD00483737 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FE989311E8578FD00483737 /* Config.swift */; };
 		B5948E326CE86972966A42DA /* Pods_SwiftVASTXmlParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19B0DA31FB5BCB56B438BF21 /* Pods_SwiftVASTXmlParser.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		19B0DA31FB5BCB56B438BF21 /* Pods_SwiftVASTXmlParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftVASTXmlParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB2F34D1E85815D0074468F /* vast_full.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vast_full.xml; sourceTree = "<group>"; };
 		6FCE29C61E7FE37B0031F288 /* SwiftVASTXmlParser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftVASTXmlParser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FCE29C91E7FE37B0031F288 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6FCE29CB1E7FE37B0031F288 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +57,13 @@
 		6FCE29F11E8000AF0031F288 /* TrackingEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackingEvents.swift; sourceTree = "<group>"; };
 		6FCE29F31E8000C40031F288 /* VideoClicks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoClicks.swift; sourceTree = "<group>"; };
 		6FCE29F81E802E910031F288 /* vast.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = vast.xml; sourceTree = "<group>"; };
+		6FE989241E852D1B00483737 /* NetworkConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConnection.swift; sourceTree = "<group>"; };
+		6FE989261E852E4E00483737 /* ExadsSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExadsSDK.swift; sourceTree = "<group>"; };
+		6FE989281E852E8800483737 /* ResponseObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseObserver.swift; sourceTree = "<group>"; };
+		6FE9892A1E852F9400483737 /* ActionGetVAST.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionGetVAST.swift; sourceTree = "<group>"; };
+		6FE9892D1E856A7D00483737 /* godaddy.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = godaddy.der; sourceTree = "<group>"; };
+		6FE9892F1E8578F100483737 /* URLHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		6FE989311E8578FD00483737 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		A234C3B1C9875AB36B4D9088 /* Pods-SwiftVASTXmlParser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVASTXmlParser.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVASTXmlParser/Pods-SwiftVASTXmlParser.release.xcconfig"; sourceTree = "<group>"; };
 		ABCB5DFDF3F5341A653C08CE /* Pods-SwiftVASTXmlParser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftVASTXmlParser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftVASTXmlParser/Pods-SwiftVASTXmlParser.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +88,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6FB2F34A1E857E9D0074468F /* ExadsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				6FE989311E8578FD00483737 /* Config.swift */,
+				6FE989261E852E4E00483737 /* ExadsSDK.swift */,
+				6FE9892D1E856A7D00483737 /* godaddy.der */,
+				6FE989241E852D1B00483737 /* NetworkConnection.swift */,
+				6FE9892F1E8578F100483737 /* URLHelper.swift */,
+				6FB2F34B1E857EFC0074468F /* Protocol */,
+				6FB2F34C1E857F0D0074468F /* Action */,
+			);
+			name = ExadsSDK;
+			sourceTree = "<group>";
+		};
+		6FB2F34B1E857EFC0074468F /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				6FE989281E852E8800483737 /* ResponseObserver.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		6FB2F34C1E857F0D0074468F /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				6FE9892A1E852F9400483737 /* ActionGetVAST.swift */,
+			);
+			name = Action;
+			sourceTree = "<group>";
+		};
 		6FCE29BD1E7FE37B0031F288 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +139,7 @@
 		6FCE29C81E7FE37B0031F288 /* SwiftVASTXmlParser */ = {
 			isa = PBXGroup;
 			children = (
+				6FB2F34A1E857E9D0074468F /* ExadsSDK */,
 				6FCE29F71E802D9E0031F288 /* XmlModels */,
 				6FCE29FA1E803A7C0031F288 /* XmlData */,
 				6FCE29C91E7FE37B0031F288 /* AppDelegate.swift */,
@@ -126,6 +173,7 @@
 		6FCE29FA1E803A7C0031F288 /* XmlData */ = {
 			isa = PBXGroup;
 			children = (
+				6FB2F34D1E85815D0074468F /* vast_full.xml */,
 				6FCE29F81E802E910031F288 /* vast.xml */,
 			);
 			name = XmlData;
@@ -203,8 +251,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FB2F34E1E85815D0074468F /* vast_full.xml in Resources */,
 				6FCE29D41E7FE37B0031F288 /* LaunchScreen.storyboard in Resources */,
 				6FCE29F91E802E910031F288 /* vast.xml in Resources */,
+				6FE9892E1E856A7D00483737 /* godaddy.der in Resources */,
 				6FCE29D11E7FE37B0031F288 /* Assets.xcassets in Resources */,
 				6FCE29CF1E7FE37B0031F288 /* Main.storyboard in Resources */,
 			);
@@ -268,14 +318,20 @@
 				6FCE29E61E8000510031F288 /* Creatives.swift in Sources */,
 				6FCE29F21E8000AF0031F288 /* TrackingEvents.swift in Sources */,
 				6FCE29CC1E7FE37B0031F288 /* ViewController.swift in Sources */,
+				6FE989301E8578F100483737 /* URLHelper.swift in Sources */,
+				6FE989321E8578FD00483737 /* Config.swift in Sources */,
 				6FCE29EE1E8000890031F288 /* MediaFiles.swift in Sources */,
+				6FE989251E852D1B00483737 /* NetworkConnection.swift in Sources */,
 				6FCE29F41E8000C40031F288 /* VideoClicks.swift in Sources */,
+				6FE9892B1E852F9400483737 /* ActionGetVAST.swift in Sources */,
 				6FCE29E41E8000480031F288 /* Creative.swift in Sources */,
 				6FCE29CA1E7FE37B0031F288 /* AppDelegate.swift in Sources */,
+				6FE989291E852E8800483737 /* ResponseObserver.swift in Sources */,
 				6FCE29F01E80009D0031F288 /* Tracking.swift in Sources */,
 				6FCE29EA1E8000740031F288 /* Linear.swift in Sources */,
 				6FCE29E21E8000240031F288 /* Ad.swift in Sources */,
 				6FCE29E01E7FFFAF0031F288 /* VAST.swift in Sources */,
+				6FE989271E852E4E00483737 /* ExadsSDK.swift in Sources */,
 				6FCE29E81E8000610031F288 /* InLine.swift in Sources */,
 				6FCE29EC1E8000810031F288 /* MediaFile.swift in Sources */,
 			);
