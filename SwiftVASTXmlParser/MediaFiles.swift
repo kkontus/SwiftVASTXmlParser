@@ -10,5 +10,5 @@ import Foundation
 import EVReflection
 
 class MediaFiles: EVObject {
-    var mediaFile = MediaFile()
+    var mediaFile = [MediaFile]()
 }

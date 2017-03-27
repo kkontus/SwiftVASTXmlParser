@@ -11,6 +11,7 @@ import EVReflection
 
 class Ad: EVObject {
     var id: String?
+    var sequence: String?
     var inLine = InLine()
     
     override func setValue(_ value: Any!, forUndefinedKey key: String) {
@@ -18,6 +19,10 @@ class Ad: EVObject {
         case "_id":
             if let object = value as? String {
                 self.id = object
+            }
+        case "_sequence":
+            if let object = value as? String {
+                self.sequence = object
             }
         default:
             self.addStatusMessage(.IncorrectKey, message: "SetValue in '\(type(of: self))' for key '\(key)' should be handled.")

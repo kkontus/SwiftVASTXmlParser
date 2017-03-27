@@ -11,4 +11,6 @@ import EVReflection
 
 class VideoClicks: EVObject {
     var clickThrough: String?
+    var clickTracking: [String] = []
+    var customClick: [String] = []
 }

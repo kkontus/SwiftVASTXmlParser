@@ -15,6 +15,9 @@ class Linear: EVObject {
     var trackingEvents = TrackingEvents()
     var videoClicks = VideoClicks()
     var mediaFiles = MediaFiles()
+    var icons = Icons()
+    var creativeExtensions = CreativeExtensions()
+    var adParameters: String?
     
     override func setValue(_ value: Any!, forUndefinedKey key: String) {
         switch key {

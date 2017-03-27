@@ -10,5 +10,5 @@ import Foundation
 import EVReflection
 
 class TrackingEvents: EVObject {
-    var tracking = Tracking()
+    var tracking = [Tracking]()
 }
